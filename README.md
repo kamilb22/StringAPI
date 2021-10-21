@@ -44,6 +44,6 @@
 | string | the text to be processed |
 
 **example** `200`
- `GET` /special/Ala1_ Ma Kota6$%^
+ `GET` /special/Ala1_ Ma Kota6$_<>
 
-    4
+    5
