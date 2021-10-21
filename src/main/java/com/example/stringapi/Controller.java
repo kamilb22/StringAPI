@@ -35,5 +35,16 @@ public class Controller {
         return number;
     }
 
+    @RequestMapping("/special/{string}")
+    public int special(@PathVariable String string){
+        int number = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) != ' ' && !Character.isDigit(string.charAt(i)) && !Character.isLetter(string.charAt(i))) {
+                number++;
+            }
+        }
+        return number;
+    }
+
 
 }
