@@ -26,4 +26,14 @@ public class Controller {
         return number;
     }
 
+    @RequestMapping("/numbers/{string}")
+    public int numbers(@PathVariable String string){
+        int number = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (Character.isDigit(string.charAt(i))) number++;
+        }
+        return number;
+    }
+
+
 }
