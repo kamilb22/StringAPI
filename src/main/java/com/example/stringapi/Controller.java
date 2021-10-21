@@ -17,4 +17,13 @@ public class Controller {
         return number;
     }
 
+    @RequestMapping("/upperCase/{string}")
+    public int upperCase(@PathVariable String string){
+        int number = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (Character.isUpperCase(string.charAt(i))) number++;
+        }
+        return number;
+    }
+
 }
